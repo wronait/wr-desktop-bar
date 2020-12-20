@@ -1,0 +1,37 @@
+
+
+
+
+.wr-phone {
+    display: none;
+}
+.wr_visible {
+    display: block;
+}
+
+
+.form-table th {
+    width: 155px;
+    padding: 15px 10px 20px 0;
+}
+
+
+.form-table td fieldset label {
+    margin: .75em 0 .5em!important;
+}
+
+.wp-core-ui select {
+    margin-top: -5px!important;
+}
+
+
+.form-table td {
+    padding: 10px 0;
+}
+
+
+.regular-text {
+    width: 15em;
+}
+
+

@@ -1,0 +1,116 @@
+
+
+
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 20%
+    }
+    to {
+        opacity: 1;
+        left: 0
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 20%
+    }
+    to {
+        opacity: 1;
+        left: 0
+    }
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        -webkit-transform: scale(1, 1);
+        opacity: 1
+    }
+    to {
+        -webkit-transform: scale(1.2, 1.2);
+        opacity: 0
+    }
+}
+
+.wr-desktop-bar-btn {
+    position: fixed;
+    z-index: 10;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    bottom: -400px;
+}
+
+
+
+.wr-desktop-bar-btn {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+.wr-desktop-bar-btn--phone.slide-up {
+    bottom: 100px;
+}
+
+.wr-desktop-bar-btn--email.slide-up {
+    bottom: 15px;
+}
+
+
+.fixedButton {
+    cursor: pointer;
+}
+
+.fixedButton .fa {
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.ring-btn {
+    border: 0;
+    outline: 0;
+    width: 68px;
+    height: 68px;
+    -webkit-border-radius: 99px;
+    -moz-border-radius: 99px;
+    border-radius: 99px;
+    background: #ff6824;
+    z-index: 99;
+    margin: 0;
+}
+
+.pulse-ring {
+    content: '';
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    z-index: 0;
+    animation: pulsate infinite 2s
+}
+
+.ring-btn {
+    position: relative;
+}
+
+
+@media (max-width: 991px) {
+    .wr-desktop-bar-btn {
+        display: none!important;
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        white-space: nowrap; /* 1 */
+    }
+}
